@@ -2,11 +2,13 @@ const express = require('express');
 const cors = require('cors')
 
 const { getMonitor } = require("consulta-dolar-venezuela");
-// Configurar CORS
-app.use(cors());
 
 const app = express();
 const port = 5000; // Puedes cambiar el puerto si es necesario
+
+// Configurar CORS
+app.use(cors());
+
 
 // Todas las Tasas de Cambio
 app.get('/api/all', async (req, res) => {
