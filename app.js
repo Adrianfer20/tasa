@@ -1,5 +1,9 @@
 const express = require('express');
+const cors = require('cors')
+
 const { getMonitor } = require("consulta-dolar-venezuela");
+// Configurar CORS
+app.use(cors({ origin: 'http://login.net' }));
 
 const app = express();
 const port = 5000; // Puedes cambiar el puerto si es necesario
