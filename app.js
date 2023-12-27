@@ -7,7 +7,7 @@ const app = express();
 const port = 5000; // Puedes cambiar el puerto si es necesario
 
 // Configurar CORS
-app.use(cors());
+app.use(cors({ origin: ['http://localhost', 'http://login.net', 'http://192.168.5.1'] }));
 
 
 // Todas las Tasas de Cambio
